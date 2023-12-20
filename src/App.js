@@ -111,7 +111,19 @@ const App = (props) => {
           <Router>
             <MainNavigation />
             <Routes>
-              <Route path="/" element={<Home />} />
+              {/* <Route path="/" element={<Home />} /> */}
+
+              <Route
+                path="/"
+                element={
+                  !!token ? (
+                    <Home />
+                  ) : (
+                    <Navigate to="/auth" replace />
+                  )
+                }
+              />
+
               <Route path="/auth" element={<Auth />} />
 
               <Route
