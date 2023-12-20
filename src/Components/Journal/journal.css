@@ -1,0 +1,123 @@
+.diary-app-container .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.diary-app-container .diary-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 650px;
+    min-height: 600px;
+    background: white;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+    box-shadow: 0px 10px 15px 15px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
+}
+
+.diary-app-container h1 {
+    margin: 32px;
+    font-size: 33px;
+}
+
+.diary-app-container .complete {
+    text-decoration: line-through;
+}
+
+.diary-app-container .diary-form {
+    margin-bottom: 32px;
+}
+
+.diary-app-container .diary-input {
+    padding: 14px 32px 14px 16px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: none;
+    height: 50px;
+    outline: none;
+    width: 400px;
+    box-shadow: 0px 10px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.diary-app-container .diary-date-input {
+    border-radius: 4px;
+    padding: 5px;
+    border: none;
+    height: 50px;
+    outline: none;
+    width: 160px;
+    box-shadow: 0px 10px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.diary-app-container .diary-textarea {
+    padding: 14px 32px 14px 16px;
+    margin-top: -15px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 90%;
+    box-shadow: 0px 10px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.diary-app-container .diary-button {
+    box-shadow: 20px 20px 25px 25px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    height: 45px;
+    width: 200px;
+    border-radius: 4px;
+    margin-top: 7px;
+    cursor: pointer;
+    outline: none;
+    background: black;
+    color: white;
+    text-transform: capitalize;
+    float: left;
+    margin-left: 30px;
+}
+
+.diary-app-container .diary-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.diary-app-container .diary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+    box-shadow: 0px 10px 15px 15px rgba(0, 0, 0, 0.1);
+    background: black;
+    color: white
+}
+
+.diary-app-container .delete {
+    font-size: 22px;
+}
+
+.diary-app-container .date {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.diary-app-container .share{
+    margin: 0 1rem;
+}
+
+
+@media screen and (max-width:1000px){
+    .diary-app-container .grid-container {
+        grid-template-columns: auto ;
+    }
+    .diary-app-container .diary-app {
+        margin: 1rem auto;
+    }
+}

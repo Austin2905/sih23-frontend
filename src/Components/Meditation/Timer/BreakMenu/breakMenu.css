@@ -1,0 +1,27 @@
+#meditation-app #break-menu{
+  font-size: 1.3em;
+}
+
+#meditation-app #break-menu-options {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+}
+
+#meditation-app #break-menu-dialogue {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%,-50%);
+}
+
+#meditation-app #break-menu-text {
+  margin: 5px;
+}
+
+#meditation-app #clockIcon {
+  padding: 5px;
+  margin-left: 15px;
+}

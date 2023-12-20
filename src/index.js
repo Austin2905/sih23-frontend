@@ -4,18 +4,62 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import {store, persistor} from "./store";
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+
+import axios from 'axios'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+axios.defaults.baseURL = process.env.REACT_APP_baseURL;
+let userData = JSON.parse(localStorage.getItem("userData"))
+let token
+if (userData) {
+  token = userData.token
+}
+
+//axios.defaults.headers.common['Authorization'] = {'Authorization': `Bearer ${token}`};
+axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+axios.defaults.headers.post['Content-Type'] = 'application/json';
+
+axios.interceptors.request.use(request => {
+  //    console.log(request)
+
+  // Edit request config
+  return request;
+}, error => {
+  //  console.log(error);
+  return Promise.reject(error);
+});
+
+axios.interceptors.response.use(response => {
+  // Edit response config
+  console.log(response);
+  return response;
+}, error => {
+  console.log(error.response);
+  // return new Error('Exception message');
+  // error.response.success = false
+  // return error.response;
+  return Promise.reject(error);
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Provider store={store}>
+      <PersistGate persistor={persistor}>
+      <App />
+    </PersistGate>
+  </Provider >
+  </React.StrictMode >
 );
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://cra.link/PWA
-serviceWorkerRegistration.unregister();
+// serviceWorkerRegistration.unregister();
+serviceWorkerRegistration.register();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

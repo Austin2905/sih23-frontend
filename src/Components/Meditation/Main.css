@@ -1,0 +1,23 @@
+.meditation-app-container {
+  margin: 0px;
+  background: #1F1B2E;
+  color: #E0E0E1;
+  font-family: 'Roboto', sans-serif;
+}
+
+#meditation-app {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#meditation-app .icon {
+  cursor: pointer;
+  z-index: 1;
+}
+
+#meditation-app svg{
+  display: inline !important;
+}

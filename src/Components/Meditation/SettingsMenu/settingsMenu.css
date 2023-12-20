@@ -1,0 +1,85 @@
+#meditation-app #settingsMenu{
+  width: 310px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%,0%);
+}
+
+#meditation-app .heading{
+  font-size: 1.3em;
+}
+
+#meditation-app .optionsText{
+  font-size: 18px;
+}
+
+#meditation-app .optionsValue{
+  position: absolute;
+  right: 0;
+}
+
+#meditation-app .optionsValue input[type="text"] {
+  width: 30px;
+  text-align: right;
+  margin-right: 5px;
+  background-color: #1F1B2E;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 0 5px;
+}
+
+#meditation-app .optionsValue input[type="range"]::-moz-range-thumb {
+  height: 10px;
+  width: 10px;
+}
+
+#meditation-app .optionsValue input[type="range"]::-webkit-slider-thumb {
+  height: 10px;
+  width: 10px;
+}
+
+#meditation-app .menu-input-value {
+  width: 25px;
+  display: inline-block;
+  text-align: right;
+}
+
+#meditation-app input:focus, input:focus-visible{
+  outline: 1px solid #E0E0E1;
+}
+
+/* Chrome, Safari, Edge, Opera */
+#meditation-app input::-webkit-outer-spin-button,
+#meditation-app input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#meditation-app input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+#meditation-app #settings-footer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.5px solid #E0E0E1;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+#meditation-app .settings-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+#meditation-app .settings-link-text {
+  margin-left: 10px;
+}

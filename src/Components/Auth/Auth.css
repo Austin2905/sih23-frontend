@@ -1,0 +1,53 @@
+.container-short{
+    margin: 0 auto;
+    float: none;
+    max-width: 750px!important;
+}
+
+label{
+    font-weight: bold;
+}
+
+.mar-20{
+    margin-top:15%
+}
+.error h4{
+    color: red;
+}
+
+.error h5{
+    color:red;
+}
+
+.auth-container{
+    width: 100% !important;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+
+    
+}
+
+.auth-container #card-title {
+    font-family: "Raleway Thin", sans-serif;
+    letter-spacing: 4px;
+    padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+.auth-container input{
+    width: 100%;
+}
+
+.auth-container .form-group{
+    margin: 1rem 0;
+}
+
+.form-group.button-group{
+    margin: 2rem 0;
+}

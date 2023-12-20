@@ -1,0 +1,15 @@
+#meditation-app #navbar{
+  display: flex;
+  align-items: center;
+  height: 35px;
+  padding-top: 20px;
+}
+
+#meditation-app #options{
+  display: flex;
+  align-items: center;
+}
+
+#meditation-app #settings{
+  margin-left: auto;
+}

@@ -1,0 +1,39 @@
+#meditation-app .timer-container{
+  width: 200px;
+  margin: auto;
+  padding: 33px;
+  position: relative;
+  text-align: center;
+  align-self: center;
+}
+
+#meditation-app .widget{
+  position: relative;
+}
+
+#meditation-app #countdown {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%,-50%);
+}
+
+#meditation-app #text{
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+/* .icon.timer{
+  position: absolute;
+  z-index: 1;
+} */
+
+#meditation-app #start{
+  padding: 8px;
+}
+
+#meditation-app #coffee{
+  left: 83px;
+  top: 70px;
+}
