@@ -5,7 +5,7 @@
 
 .today-habits-container {
     margin: 1rem auto;
-    background: #cac531;
+    background: #cac9f7;
     /* fallback for old browsers */
     /* background: -webkit-linear-gradient(to right, #cac531, #f3f9a7); Chrome 10-25, Safari 5.1-6 */
     /* background: linear-gradient(to right, #cac531, #f3f9a7); */
@@ -24,17 +24,17 @@
 }
 
 .home-cards-container .home-card {
-    background: pink;
+    background: #c096eb;
     display: flex;
     align-items: center;
-    padding: 1rem .3rem;
-    border-radius: 2%;
-    color: brown;
+    padding: 2rem .3rem;
+    border-radius: 12px;
+    color: black;
     text-decoration: none;
 }
 
 .home-cards-container .home-card svg {
-    color: brown;
+    color: black;
     margin: 0 .4rem;
 }
 
@@ -42,6 +42,7 @@
 
 .progress-card{
     text-decoration: none;
+    margin: 0 auto;
 }
 .ag-courses_box {
     display: -webkit-box;
@@ -160,6 +161,11 @@
     background-color: #4c49ea;
 }
 
+.todoItem{
+    background: #e3eeff;
+    border-radius: 10px;
+    padding: 1rem;
+}
 
 
 @media only screen and (max-width: 979px) {

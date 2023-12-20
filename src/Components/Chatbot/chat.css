@@ -1,9 +1,12 @@
 .chat-app-container{
     width: 60vw !important;
-    height: 90vh;
+    min-height: 90vh;
+    height: auto;
     background: #f3f4f6;
     padding: 2rem;
     margin: auto;
+    position: relative;
+    padding-bottom: 6rem;
 }
 
 .share-button{
@@ -11,6 +14,13 @@
     width: 100%;
     height: 100%;
 }
+
+.send-message-container{
+    position: absolute;
+    bottom: 0;
+    max-width: 90%;
+}
+
 
 @media only screen and (max-width: 600px) {
     .chat-app-container{

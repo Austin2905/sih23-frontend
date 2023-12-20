@@ -5,14 +5,6 @@ import Message from "./Message";
 import OpenAI from "openai";
 import "./chat.css"
 import { useLocation } from "react-router-dom"
-
-import {
-  MainContainer,
-  MessageInput,
-  MessageList,
-  MessageHeader
-} from "@minchat/react-chat-ui";
-
 import { Icon } from '@iconify/react'
 
 
@@ -227,7 +219,7 @@ const Chat = () => {
           </Grid>
         ))}
       </Grid>
-      <Grid container direction="row" paddingBottom={5} justifyContent={"space-between"}>
+      <Grid className="send-message-container" container direction="row" paddingBottom={5} justifyContent={"space-between"}>
         <Grid item sm={11} xs={9}>
           <TextField
             label="Type your message"
@@ -250,14 +242,6 @@ const Chat = () => {
         </Grid>
       </Grid>
     </Container>
-
-    // <div>
-    //   <MessageList
-    //     currentUserId='baymax'
-    //     messages={messages}
-    //   />
-    //   <MessageInput onSendMessage={(message) => handleSendMessage(message)} placeholder="Type message here"  />
-    // </div>
   );
 };
 
